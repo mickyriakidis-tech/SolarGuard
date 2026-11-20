@@ -1,0 +1,8 @@
+scenario,energy,data_available,risk_score
+A,80,True,0.10
+B,abc,True,0.75
+C,20,True,0.75
+D,80,False,
+E,"",True,0.30
+F,120,True,0.30
+I,abc,True,0.50

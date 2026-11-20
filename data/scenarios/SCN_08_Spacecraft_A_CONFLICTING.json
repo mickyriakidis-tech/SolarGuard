@@ -1,0 +1,15 @@
+{
+  "scenario_id": "SCN_08_Spacecraft_A_CONFLICTING",
+  "profile": "Spacecraft_A",
+  "category": "Conflicting indicators",
+  "description": "Διαφωνία μεταξύ διαφορετικών ενδείξεων | Προφίλ: Υψηλή ενέργεια, χαμηλή ευαισθησία",
+  "data_type": "Simulated historical",
+  "inputs": {
+    "risk_score": 0.58,
+    "data_quality": 70,
+    "uncertainty": 0.45,
+    "energy": 0.9,
+    "vulnerability": 0.2,
+    "hard_constraints_passed": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "scenario_id": "SCN_23_Spacecraft_C_HIGH_VULN",
+  "profile": "Spacecraft_C",
+  "category": "High vulnerability",
+  "description": "Αυξημένη ευαισθησία - παραβίαση ορίου ασφαλείας | Προφίλ: Περιορισμένη ενέργεια, υψηλή ευαισθησία",
+  "data_type": "Simulated historical",
+  "inputs": {
+    "risk_score": 0.77,
+    "data_quality": 92,
+    "uncertainty": 0.15,
+    "energy": 0.35,
+    "vulnerability": 0.8,
+    "hard_constraints_passed": false
+  }
+}

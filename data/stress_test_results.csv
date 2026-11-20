@@ -1,0 +1,7 @@
+test_case,data_quality,uncertainty,action,unreliable_detected,human_review_requested,decision_cost
+Test_A_Normal,98,0.05,NORMAL,False,False,20
+Test_B_5pct_Missing,85,0.12,NORMAL,False,False,20
+Test_C_10pct_Missing,70,0.25,NORMAL,False,False,20
+Test_D_20pct_Missing,45,0.4,LIMITED,True,True,50
+Test_E_Delayed_Data,65,0.3,LIMITED,False,False,50
+Test_F_High_Noise,50,0.48,LIMITED,True,True,50

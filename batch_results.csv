@@ -1,0 +1,9 @@
+﻿scenario,energy,data_available,risk_score,action
+A,80,True,0.15,NORMAL
+B,80,True,0.75,NORMAL
+C,20,True,0.75,LIMITED
+D,80,False,,LIMITED
+E,50,True,0.30,NORMAL
+F,29,True,0.10,LIMITED
+G,95,True,0.90,NORMAL
+H,60,True,0.50,NORMAL

@@ -1,0 +1,15 @@
+{
+  "scenario_id": "SCN_02_Spacecraft_A_HIGH_SOLAR",
+  "profile": "Spacecraft_A",
+  "category": "High solar activity",
+  "description": "Αυξημένος δείκτης κινδύνου | Προφίλ: Υψηλή ενέργεια, χαμηλή ευαισθησία",
+  "data_type": "Simulated historical",
+  "inputs": {
+    "risk_score": 0.81,
+    "data_quality": 95,
+    "uncertainty": 0.1,
+    "energy": 0.9,
+    "vulnerability": 0.2,
+    "hard_constraints_passed": true
+  }
+}

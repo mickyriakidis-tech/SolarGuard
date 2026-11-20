@@ -1,0 +1,15 @@
+{
+  "scenario_id": "SCN_16_Spacecraft_B_CONFLICTING",
+  "profile": "Spacecraft_B",
+  "category": "Conflicting indicators",
+  "description": "Διαφωνία μεταξύ διαφορετικών ενδείξεων | Προφίλ: Μέτρια ενέργεια, μέτρια ευαισθησία",
+  "data_type": "Simulated historical",
+  "inputs": {
+    "risk_score": 0.62,
+    "data_quality": 70,
+    "uncertainty": 0.45,
+    "energy": 0.6,
+    "vulnerability": 0.5,
+    "hard_constraints_passed": true
+  }
+}

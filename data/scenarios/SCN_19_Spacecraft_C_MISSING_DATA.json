@@ -1,0 +1,15 @@
+{
+  "scenario_id": "SCN_19_Spacecraft_C_MISSING_DATA",
+  "profile": "Spacecraft_C",
+  "category": "Missing data",
+  "description": "Ελλιπή δεδομένα (συνθετική μεταβολή) | Προφίλ: Περιορισμένη ενέργεια, υψηλή ευαισθησία",
+  "data_type": "Synthetic perturbation",
+  "inputs": {
+    "risk_score": 0.52,
+    "data_quality": 45,
+    "uncertainty": 0.3,
+    "energy": 0.35,
+    "vulnerability": 0.8,
+    "hard_constraints_passed": true
+  }
+}

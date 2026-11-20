@@ -1,0 +1,15 @@
+{
+  "scenario_id": "SCN_04_Spacecraft_A_DELAYED_DATA",
+  "profile": "Spacecraft_A",
+  "category": "Delayed data",
+  "description": "Καθυστερημένες μετρήσεις (συνθετική μεταβολή) | Προφίλ: Υψηλή ενέργεια, χαμηλή ευαισθησία",
+  "data_type": "Synthetic perturbation",
+  "inputs": {
+    "risk_score": 0.48,
+    "data_quality": 65,
+    "uncertainty": 0.25,
+    "energy": 0.9,
+    "vulnerability": 0.2,
+    "hard_constraints_passed": true
+  }
+}

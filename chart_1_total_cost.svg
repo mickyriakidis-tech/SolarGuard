@@ -1,0 +1,15 @@
+<svg xmlns="http://w3.org" width="500" height="250" style="background:#f9f9f9;font-family:sans-serif">
+<text x="20" y="30" font-size="16" font-weight="bold">Average Total Cost per Method</text>
+<text x="20" y="78" font-size="12">Baseline_1</text>
+<rect x="140" y="60" width="280" height="25" fill="#2b7de9" />
+<text x="430" y="78" font-size="12">95.8</text>
+<text x="20" y="123" font-size="12">Baseline_2</text>
+<rect x="140" y="105" width="222" height="25" fill="#2b7de9" />
+<text x="372" y="123" font-size="12">76.2</text>
+<text x="20" y="168" font-size="12">Baseline_3</text>
+<rect x="140" y="150" width="255" height="25" fill="#2b7de9" />
+<text x="405" y="168" font-size="12">87.5</text>
+<text x="20" y="213" font-size="12">SolarGuard</text>
+<rect x="140" y="195" width="164" height="25" fill="#2b7de9" />
+<text x="314" y="213" font-size="12">56.2</text>
+</svg>

@@ -1,0 +1,15 @@
+{
+  "scenario_id": "SCN_01_Spacecraft_A_NORMAL",
+  "profile": "Spacecraft_A",
+  "category": "Normal conditions",
+  "description": "Κανονική λειτουργία | Προφίλ: Υψηλή ενέργεια, χαμηλή ευαισθησία",
+  "data_type": "Simulated historical",
+  "inputs": {
+    "risk_score": 0.18,
+    "data_quality": 98,
+    "uncertainty": 0.0,
+    "energy": 0.9,
+    "vulnerability": 0.2,
+    "hard_constraints_passed": true
+  }
+}

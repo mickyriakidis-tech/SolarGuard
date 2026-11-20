@@ -1,0 +1,8 @@
+timestamp,scenario,energy,data_available,risk_score,action,reason,status
+2026-11-17T11:24:22.815089,CASE_1_NORMAL,0.85,95,0.2,NORMAL,All parameters within nominal range.,READY_FOR_HUMAN_REVIEW
+2026-11-17T11:24:22.816647,CASE_2_PROTECTIVE,0.75,90,0.82,PROTECTIVE,High solar risk or low energy - protective action required.,READY_FOR_HUMAN_REVIEW
+2026-11-17T11:24:22.817535,CASE_3_LIMITED_LOW_QUALITY,0.8,45,0.3,LIMITED,Low data quality - operating in limited mode.,READY_FOR_HUMAN_REVIEW
+2026-11-17T11:24:22.818305,CASE_4_BLOCKED_CONSTRAINT,0.6,88,0.5,PROTECTIVE,Hard safety constraints failed - decision blocked.,BLOCKED
+2026-11-17T11:24:22.839110,CASE_5_HUMAN_REVIEW,0.4,75,0.65,LIMITED,Moderate risk detected - limited operation.,READY_FOR_HUMAN_REVIEW
+
+

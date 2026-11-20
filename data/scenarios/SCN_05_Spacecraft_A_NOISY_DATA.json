@@ -1,0 +1,15 @@
+{
+  "scenario_id": "SCN_05_Spacecraft_A_NOISY_DATA",
+  "profile": "Spacecraft_A",
+  "category": "Noisy data",
+  "description": "Θορυβώδεις μετρήσεις (συνθετική μεταβολή) | Προφίλ: Υψηλή ενέργεια, χαμηλή ευαισθησία",
+  "data_type": "Synthetic perturbation",
+  "inputs": {
+    "risk_score": 0.53,
+    "data_quality": 55,
+    "uncertainty": 0.35,
+    "energy": 0.9,
+    "vulnerability": 0.2,
+    "hard_constraints_passed": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "scenario_id": "SCN_11_Spacecraft_B_MISSING_DATA",
+  "profile": "Spacecraft_B",
+  "category": "Missing data",
+  "description": "Ελλιπή δεδομένα (συνθετική μεταβολή) | Προφίλ: Μέτρια ενέργεια, μέτρια ευαισθησία",
+  "data_type": "Synthetic perturbation",
+  "inputs": {
+    "risk_score": 0.48,
+    "data_quality": 45,
+    "uncertainty": 0.3,
+    "energy": 0.6,
+    "vulnerability": 0.5,
+    "hard_constraints_passed": true
+  }
+}

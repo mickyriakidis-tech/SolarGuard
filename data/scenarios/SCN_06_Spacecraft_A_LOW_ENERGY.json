@@ -1,0 +1,15 @@
+{
+  "scenario_id": "SCN_06_Spacecraft_A_LOW_ENERGY",
+  "profile": "Spacecraft_A",
+  "category": "Low energy",
+  "description": "Περιορισμένοι ενεργειακοί πόροι | Προφίλ: Υψηλή ενέργεια, χαμηλή ευαισθησία",
+  "data_type": "Simulated historical",
+  "inputs": {
+    "risk_score": 0.38,
+    "data_quality": 90,
+    "uncertainty": 0.1,
+    "energy": 0.22,
+    "vulnerability": 0.2,
+    "hard_constraints_passed": true
+  }
+}

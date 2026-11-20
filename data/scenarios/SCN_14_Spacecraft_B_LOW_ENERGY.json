@@ -1,0 +1,15 @@
+{
+  "scenario_id": "SCN_14_Spacecraft_B_LOW_ENERGY",
+  "profile": "Spacecraft_B",
+  "category": "Low energy",
+  "description": "Περιορισμένοι ενεργειακοί πόροι | Προφίλ: Μέτρια ενέργεια, μέτρια ευαισθησία",
+  "data_type": "Simulated historical",
+  "inputs": {
+    "risk_score": 0.42,
+    "data_quality": 90,
+    "uncertainty": 0.1,
+    "energy": 0.22,
+    "vulnerability": 0.5,
+    "hard_constraints_passed": true
+  }
+}

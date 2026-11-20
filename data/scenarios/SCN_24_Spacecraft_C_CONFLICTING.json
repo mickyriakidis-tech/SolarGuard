@@ -1,0 +1,15 @@
+{
+  "scenario_id": "SCN_24_Spacecraft_C_CONFLICTING",
+  "profile": "Spacecraft_C",
+  "category": "Conflicting indicators",
+  "description": "Διαφωνία μεταξύ διαφορετικών ενδείξεων | Προφίλ: Περιορισμένη ενέργεια, υψηλή ευαισθησία",
+  "data_type": "Simulated historical",
+  "inputs": {
+    "risk_score": 0.67,
+    "data_quality": 70,
+    "uncertainty": 0.45,
+    "energy": 0.35,
+    "vulnerability": 0.8,
+    "hard_constraints_passed": true
+  }
+}
