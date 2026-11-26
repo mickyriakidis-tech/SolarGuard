@@ -1,0 +1,12 @@
+<svg xmlns="http://w3.org" width="560" height="260" style="background:#f8f9fa;font-family:sans-serif">
+<text x="20" y="30" font-size="16" font-weight="bold">3. SolarGuard Mean Cost Across Energy Levels</text>
+<text x="20" y="83" font-size="12">C_Resource_High_Energy</text>
+<rect x="190" y="65" width="157" height="24" fill="#0d6efd" rx="3"/>
+<text x="357" y="83" font-size="12">45.00</text>
+<text x="20" y="128" font-size="12">C_Resource_Med_Energy</text>
+<rect x="190" y="110" width="157" height="24" fill="#0d6efd" rx="3"/>
+<text x="357" y="128" font-size="12">45.00</text>
+<text x="20" y="173" font-size="12">C_Resource_Low_Energy</text>
+<rect x="190" y="155" width="280" height="24" fill="#0d6efd" rx="3"/>
+<text x="480" y="173" font-size="12">80.00</text>
+</svg>

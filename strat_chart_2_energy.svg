@@ -1,0 +1,12 @@
+<svg xmlns="http://w3.org" width="540" height="260" style="background:#f8f9fa;font-family:sans-serif">
+<text x="20" y="30" font-size="16" font-weight="bold">2. Final Remaining Energy (%) per Strategy</text>
+<text x="20" y="83" font-size="12">Strategy_A</text>
+<rect x="170" y="65" width="161" height="24" fill="#1a73e8" rx="3"/>
+<text x="341" y="83" font-size="12">23.3</text>
+<text x="20" y="128" font-size="12">Strategy_B</text>
+<rect x="170" y="110" width="245" height="24" fill="#1a73e8" rx="3"/>
+<text x="425" y="128" font-size="12">35.3</text>
+<text x="20" y="173" font-size="12">Strategy_C</text>
+<rect x="170" y="155" width="280" height="24" fill="#1a73e8" rx="3"/>
+<text x="460" y="173" font-size="12">40.3</text>
+</svg>

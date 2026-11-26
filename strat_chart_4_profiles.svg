@@ -1,0 +1,12 @@
+<svg xmlns="http://w3.org" width="540" height="260" style="background:#f8f9fa;font-family:sans-serif">
+<text x="20" y="30" font-size="16" font-weight="bold">4. Strategy C Cost per Spacecraft Profile</text>
+<text x="20" y="83" font-size="12">Spacecraft_A</text>
+<rect x="170" y="65" width="140" height="24" fill="#1a73e8" rx="3"/>
+<text x="320" y="83" font-size="12">395.0</text>
+<text x="20" y="128" font-size="12">Spacecraft_B</text>
+<rect x="170" y="110" width="157" height="24" fill="#1a73e8" rx="3"/>
+<text x="337" y="128" font-size="12">445.0</text>
+<text x="20" y="173" font-size="12">Spacecraft_C</text>
+<rect x="170" y="155" width="280" height="24" fill="#1a73e8" rx="3"/>
+<text x="460" y="173" font-size="12">790.0</text>
+</svg>
