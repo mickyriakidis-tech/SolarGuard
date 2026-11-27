@@ -26,6 +26,21 @@
 * **Dynamic Spacecraft Model:** [`digital_twin.py`](digital_twin.py), [`test_digital_twin.py`](test_digital_twin.py) | Design: [`DIGITAL_TWIN_DESIGN.md`](DIGITAL_TWIN_DESIGN.md)
 * **Closed-Loop Integration & Experiments:** [`digital_twin_integration.py`](digital_twin_integration.py) | Report: [`DIGITAL_TWIN_EXPERIMENT_REPORT.md`](DIGITAL_TWIN_EXPERIMENT_REPORT.md)
 
+### Stage 5: Validation, Statistical Robustness & Final Prototype (Days 32–35)
+* **Digital Twin Validation (10 Scenarios):** [`digital_twin_validation.py`](digital_twin_validation.py), [`test_digital_twin_validation.py`](test_digital_twin_validation.py) | Report: [`DIGITAL_TWIN_VALIDATION_REPORT.md`](DIGITAL_TWIN_VALIDATION_REPORT.md)
+* **Multi-Strategy Comparison & Judges Demo:** [`strategy_comparison.py`](strategy_comparison.py), [`digital_twin_demo.py`](digital_twin_demo.py) | Report: [`STRATEGY_COMPARISON_REPORT.md`](STRATEGY_COMPARISON_REPORT.md)
+* **Statistical Robustness (30 Runs/Condition):** [`robustness_testing.py`](robustness_testing.py), [`statistical_analysis.py`](statistical_analysis.py) | Report: [`ROBUSTNESS_REPORT.md`](ROBUSTNESS_REPORT.md)
+* **Integrated Final Prototype:** [`final_demo.py`](final_demo.py) | Technical Summary: [`FINAL_TECHNICAL_REPORT.md`](FINAL_TECHNICAL_REPORT.md)
+
+### Stage 6: Innovation Validation & Product Strategy (Days 36–37)
+* **Competitive Differentiation & Innovation Gap:** [`innovation_comparison.md`](innovation_comparison.md), [`innovation_gap.md`](innovation_gap.md)
+* **Target Users & Validation Questionnaire:** [`target_users.md`](target_users.md), [`user_validation_questions.md`](user_validation_questions.md)
+* **Product Requirements, Roadmap & Live Demo Script:** [`PRODUCT_REQUIREMENTS.md`](PRODUCT_REQUIREMENTS.md), [`PRODUCT_ROADMAP.md`](PRODUCT_ROADMAP.md), [`USER_DEMO_SCRIPT.md`](USER_DEMO_SCRIPT.md)
+
+### Stage 7: Market Analysis, Business Model & Final Research Report (Days 38–39)
+* **Market, Competitor & Business Strategy:** [`market_research.md`](market_research.md), [`competitor_analysis.md`](competitor_analysis.md), [`business_model_canvas.md`](business_model_canvas.md)
+* **Final Results Aggregation & Scientific Paper:** [`final_results_analysis.py`](final_results_analysis.py) | Research Paper: [`SOLARGUARD_FINAL_RESEARCH_REPORT.md`](SOLARGUARD_FINAL_RESEARCH_REPORT.md)
+  
 ---
 
 ## 🚀 How to Run Locally
