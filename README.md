@@ -1,50 +1,76 @@
-# 🛰️ SolarGuard 2.0: Intelligent Spacecraft Protection System
+# 🛰️ SolarGuard 2.0: Uncertainty-Aware Spacecraft Decision Support & Digital Twin
 
-**SolarGuard 2.0** is an intelligent decision-support prototype designed to safeguard satellites and space missions from solar storms and severe space weather events.
+**SolarGuard 2.0** is a multi-factor, human-in-the-loop decision support prototype designed to protect satellites during space weather events. By integrating telemetry quality scoring, forecast uncertainty, spacecraft energy constraints, and a closed-loop Digital Twin, it eliminates safety violations and reduces unnecessary Safe Mode shutdowns.
 
 ---
 
-## 📅 Project Progression & Architecture (Chronological Order)
+## ⭐ Start Here (Key Deliverables for Judges & Evaluators)
+* 📄 **Final Scientific Research Paper:** [`SOLARGUARD_FINAL_RESEARCH_REPORT.md`](SOLARGUARD_FINAL_RESEARCH_REPORT.md) *(Complete methodology, RQ1–RQ4 results, and limitations)*
+* 🚀 **Integrated Live Prototype Demo:** [`final_demo.py`](final_demo.py) *(End-to-end 5-cycle execution)*
+* 🖥️ **Mission Control Dashboard:** [`mission_dashboard.py`](mission_dashboard.py) *(Interactive Streamlit monitoring interface)*
+* 💼 **Commercial & Innovation Strategy:** [`business_model_canvas.md`](business_model_canvas.md) | [`innovation_comparison.md`](innovation_comparison.md)
 
-### Stage 1: Core Risk & Cost Modeling (Days 15–22)
-* **Input Validation & Batch Testing:** [`day15_batch_test.py`](day15_batch_test.py), [`day16_validate_results.py`](day16_validate_results.py), [`day19_input_validation.py`](day19_input_validation.py)
-* **Decision Pipeline & Cost Engine:** [`cost_model.py`](cost_model.py), [`day18_pipeline.py`](day18_pipeline.py), [`day20_integrated_pipeline.py`](day20_integrated_pipeline.py)
-* **Monitoring & Audit Logging:** [`monitoring.py`](monitoring.py), [`audit_logger.py`](audit_logger.py), [`day21_monitoring.py`](day21_monitoring.py), [`day22_audit_reader.py`](day22_audit_reader.py)
+---
 
-### Stage 2: Mission Control Dashboard & Decision Contract (Days 23–26)
-* **Interactive Dashboard:** [`mission_dashboard.py`](mission_dashboard.py), [`dashboard_data.py`](dashboard_data.py)
-* **Safety Decision Contract & Unit Tests:** [`decision_contract.py`](decision_contract.py), [`test_decision_contract.py`](test_decision_contract.py)
-* **Unified Decision Engine:** [`decision_engine.py`](decision_engine.py)
+## 📊 Key Experimental Highlights
 
-### Stage 3: Scientific Benchmarking & Ablation Study (Days 27–29)
-* **24-Scenario Simulation Library:** [`scenario_library.py`](scenario_library.py) | Report: [`SCENARIO_CATALOG.md`](SCENARIO_CATALOG.md)
-* **Multi-Baseline Benchmarking:** [`benchmark.py`](benchmark.py) | Report: [`BENCHMARK_REPORT.md`](BENCHMARK_REPORT.md)
-  * Visual Charts: [`chart_1_total_cost.svg`](chart_1_total_cost.svg), [`chart_2_unnecessary.svg`](chart_2_unnecessary.svg), [`chart_3_profile_performance.svg`](chart_3_profile_performance.svg)
-* **Stress Testing & Ablation Study:** [`stress_test.py`](stress_test.py), [`ablation_study.py`](ablation_study.py) | Report: [`ABLATION_STUDY.md`](ABLATION_STUDY.md)
+| Evaluation Metric | Baseline (Single-Threshold) | **SolarGuard 2.0** | Impact |
+|---|---|---|---|
+| **Benchmark Mean Cost (24 Scenarios)** | `95.83` units | **`56.25` units** | **-41.3% operational cost** |
+| **Statistical Robustness (330 Runs)** | `73.09` units | **`39.77` units** | **-45.6% mean cost under noise** |
+| **Hard Safety Constraint Violations** | `> 0` violations | **`0` violations** | **100% safety compliance** |
+| **Digital Twin Consistency Validation** | — | **`9/10` scenarios passed** | Verified state & energy bounds |
 
-### Stage 4: Closed-Loop Spacecraft Digital Twin (Days 30–31)
-* **Dynamic Spacecraft Model:** [`digital_twin.py`](digital_twin.py), [`test_digital_twin.py`](test_digital_twin.py) | Design: [`DIGITAL_TWIN_DESIGN.md`](DIGITAL_TWIN_DESIGN.md)
+---
+
+## 🏛️ Repository Architecture (Organized by Subsystem)
+
+### 1. Core Decision Engine & Safety Contract
+* **Decision Logic & Explainability:** [`decision_engine.py`](decision_engine.py) — Evaluates environmental risk, data quality, uncertainty, and energy reserves.
+* **Safety Contract & Schema Validation:** [`decision_contract.py`](decision_contract.py) — Enforces hard safety boundaries (`BLOCKED` status on violation).
+* **Cost & Risk Pipeline:** [`cost_model.py`](cost_model.py), [`day20_integrated_pipeline.py`](day20_integrated_pipeline.py), [`day19_input_validation.py`](day19_input_validation.py)
+* **Automated Contract Tests:** [`test_decision_contract.py`](test_decision_contract.py)
+
+### 2. Closed-Loop Spacecraft Digital Twin
+* **Dynamic Spacecraft State Model:** [`digital_twin.py`](digital_twin.py) — Simulates energy and memory evolution across discrete time steps.
 * **Closed-Loop Integration & Experiments:** [`digital_twin_integration.py`](digital_twin_integration.py) | Report: [`DIGITAL_TWIN_EXPERIMENT_REPORT.md`](DIGITAL_TWIN_EXPERIMENT_REPORT.md)
+* **Consistency & Bounds Validation:** [`digital_twin_validation.py`](digital_twin_validation.py) | Report: [`DIGITAL_TWIN_VALIDATION_REPORT.md`](DIGITAL_TWIN_VALIDATION_REPORT.md)
+* **Design Spec & Unit Tests:** [`DIGITAL_TWIN_DESIGN.md`](DIGITAL_TWIN_DESIGN.md), [`test_digital_twin.py`](test_digital_twin.py), [`test_digital_twin_validation.py`](test_digital_twin_validation.py)
 
-### Stage 5: Validation, Statistical Robustness & Final Prototype (Days 32–35)
-* **Digital Twin Validation (10 Scenarios):** [`digital_twin_validation.py`](digital_twin_validation.py), [`test_digital_twin_validation.py`](test_digital_twin_validation.py) | Report: [`DIGITAL_TWIN_VALIDATION_REPORT.md`](DIGITAL_TWIN_VALIDATION_REPORT.md)
-* **Multi-Strategy Comparison & Judges Demo:** [`strategy_comparison.py`](strategy_comparison.py), [`digital_twin_demo.py`](digital_twin_demo.py) | Report: [`STRATEGY_COMPARISON_REPORT.md`](STRATEGY_COMPARISON_REPORT.md)
+### 3. Mission Control Dashboard & Audit Telemetry
+* **Interactive Monitoring UI:** [`mission_dashboard.py`](mission_dashboard.py), [`dashboard_data.py`](dashboard_data.py)
+* **Audit Logging & Health Monitoring:** [`audit_logger.py`](audit_logger.py), [`monitoring.py`](monitoring.py)
+
+### 4. Scientific Benchmarking & Statistical Analysis
+* **24-Scenario Simulation Suite:** [`scenario_library.py`](scenario_library.py) | Catalog: [`SCENARIO_CATALOG.md`](SCENARIO_CATALOG.md)
+* **Multi-Baseline Benchmarking:** [`benchmark.py`](benchmark.py) | Report: [`BENCHMARK_REPORT.md`](BENCHMARK_REPORT.md)
+* **Multi-Strategy Comparison:** [`strategy_comparison.py`](strategy_comparison.py) | Report: [`STRATEGY_COMPARISON_REPORT.md`](STRATEGY_COMPARISON_REPORT.md)
+* **Ablation & Stress Testing:** [`ablation_study.py`](ablation_study.py), [`stress_test.py`](stress_test.py) | Report: [`ABLATION_STUDY.md`](ABLATION_STUDY.md)
 * **Statistical Robustness (30 Runs/Condition):** [`robustness_testing.py`](robustness_testing.py), [`statistical_analysis.py`](statistical_analysis.py) | Report: [`ROBUSTNESS_REPORT.md`](ROBUSTNESS_REPORT.md)
-* **Integrated Final Prototype:** [`final_demo.py`](final_demo.py) | Technical Summary: [`FINAL_TECHNICAL_REPORT.md`](FINAL_TECHNICAL_REPORT.md)
+* **Master Metrics Aggregation:** [`final_results_analysis.py`](final_results_analysis.py) | Technical Summary: [`FINAL_TECHNICAL_REPORT.md`](FINAL_TECHNICAL_REPORT.md)
 
-### Stage 6: Innovation Validation & Product Strategy (Days 36–37)
-* **Competitive Differentiation & Innovation Gap:** [`innovation_comparison.md`](innovation_comparison.md), [`innovation_gap.md`](innovation_gap.md)
-* **Target Users & Validation Questionnaire:** [`target_users.md`](target_users.md), [`user_validation_questions.md`](user_validation_questions.md)
-* **Product Requirements, Roadmap & Live Demo Script:** [`PRODUCT_REQUIREMENTS.md`](PRODUCT_REQUIREMENTS.md), [`PRODUCT_ROADMAP.md`](PRODUCT_ROADMAP.md), [`USER_DEMO_SCRIPT.md`](USER_DEMO_SCRIPT.md)
+### 5. Innovation, Market & Product Strategy
+* **Competitive & Ecosystem Analysis:** [`innovation_comparison.md`](innovation_comparison.md), [`competitor_analysis.md`](competitor_analysis.md), [`innovation_gap.md`](innovation_gap.md)
+* **Market Research & Target Users:** [`market_research.md`](market_research.md), [`target_users.md`](target_users.md), [`business_model_canvas.md`](business_model_canvas.md)
+* **Product Roadmap & Validation:** [`PRODUCT_REQUIREMENTS.md`](PRODUCT_REQUIREMENTS.md), [`PRODUCT_ROADMAP.md`](PRODUCT_ROADMAP.md), [`user_validation_questions.md`](user_validation_questions.md)
+* **Live Judges Presentation Script:** [`USER_DEMO_SCRIPT.md`](USER_DEMO_SCRIPT.md)
 
-### Stage 7: Market Analysis, Business Model & Final Research Report (Days 38–39)
-* **Market, Competitor & Business Strategy:** [`market_research.md`](market_research.md), [`competitor_analysis.md`](competitor_analysis.md), [`business_model_canvas.md`](business_model_canvas.md)
-* **Final Results Aggregation & Scientific Paper:** [`final_results_analysis.py`](final_results_analysis.py) | Research Paper: [`SOLARGUARD_FINAL_RESEARCH_REPORT.md`](SOLARGUARD_FINAL_RESEARCH_REPORT.md)
-  
 ---
 
-## 🚀 How to Run Locally
-1. Install dependencies: `pip install -r requirements.txt`
-2. Run Decision Engine: `python decision_engine.py`
-3. Launch Live Dashboard: `python -m streamlit run mission_dashboard.py`
-4. Run Full Test Suite: `python -m unittest discover`
+## 🚀 Quick Start Guide
+1. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. **Run the Integrated Prototype Demo:**
+   ```bash
+   python final_demo.py
+   ```
+3. **Launch the Live Mission Control Dashboard:**
+   ```bash
+   python -m streamlit run mission_dashboard.py
+   ```
+4. **Execute Full Automated Test Suite:**
+   ```bash
+   python -m unittest discover -v
+   ```
