@@ -1,0 +1,9 @@
+metric,value,unit
+Benchmark_Avg_Cost_SolarGuard,56.25,cost_units
+Benchmark_Avg_Cost_Baseline1,95.83,cost_units
+Benchmark_Constraint_Violations_SG,0,count
+Ablation_Cost_SG_Full,56.25,cost_units
+Ablation_Cost_Without_DataQuality,56.25,cost_units
+Robustness_Overall_Mean_SG (330 runs),39.77,cost_units
+Robustness_Overall_Mean_BaselineA (330 runs),73.09,cost_units
+Digital_Twin_Validation_Scenarios_Passed,9/10,scenarios
